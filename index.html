@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Барбершоп "Бородинский"</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container main-header-layout">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="price.html">Прайс-лист</a>
+          </li>
+          <li>
+            <a href="shop.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакт</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#">Войти</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="index-logo">
+      <img src="img/index/logo.png" width="368" height="204" alt="Барбершоп 'Бординский'">
+    </div>
+    <section class="features">
+      <div class="features-item">
+        <b class="features-name">Быстро</b>
+        <p>Мы делаем свою работу быстро! Два часа пролетят мгновенно и вы — счастливый обралатель стильной стрижки-минутки!</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Круто</b>
+        <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кини! Во всяком случае внешне.</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Дорого</b>
+        <p>Наши мастера — профиссионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+      </div>
+    </section>
+    <div class="index-content">
+      <div class="index-content-left">
+        <h2 class="index-content-title">Новости</h2>
+        <ul class="news-preview">
+          <li>
+            <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+            <time>11 января</time>
+          </li>
+          <li>
+            <p>В нашей команде пополнение, борис «бритва» стригунец, обладетель множества титулов и наград пополнил наши стройные
+              ряды.
+            </p>
+            <time>18 января</time>
+          </li>
+        </ul>
+        <a class="btn" href="#">Все новости</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Фотогалерея</h2>
+        <div class="gallery">
+          <figure class="gallery-content">
+            <img src="img/index/gallery-img.png" width="328" height="164" alt="#">
+          </figure>
+          <button class="btn gallery-prev disabled">Назад</button>
+          <button class="btn gallery-next">Вперед</button>
+        </div>
+      </div>
+    </div>
+    <div class="index-content">
+      <div class="index-content-left">
+        <h2 class="index-content-title">Контактная информания</h2>
+        <p>
+          Барбершоп "Бородинский"
+          <br> Адрес: г.Москва, Б. Конюшенная, д. 12/4
+          <br> Телефон: +38 093 386 3346
+        </p>
+        <p>
+          Время работы
+          <br> Пн - Пт: с 10:00 до 22:00
+          <br> Сб - Вс: с 10:00 до 19:00
+        </p>
+        <a class="btn js-open-map" href="#">Как проехать</a>
+        <a class="btn" href="#">Обратная связь</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Записаться</h2>
+        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+        <form class="appointment-form" action="#" method="post">
+          <input type="text" name="date" value="" placeholder="Дата">
+          <input type="text" name="time" value="" placeholder="Время">
+          <input type="text" name="name" value="" placeholder="Ваше имя">
+          <input type="tel" name="phone" value="" placeholder="Телефон">
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container main-footer-layout">
+      <section class="footer-contacts">
+        Барбершоп "Бородинский"
+        <br> Адрес: г.Москва, Б. Конюшенная, д. 12/4
+        <br>
+        <a class="js-open-map" href="#">Как нас найти?</a>
+        <br> Телефон: +38 093 386 3346
+      </section>
+      <section class="footer-socials">
+        <p>Давайте дружить!</p>
+        <div class="socials-btn-group">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработано:</p>
+        <a class="btn" href="#">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
+  <div class="modal-content">
+    <h2 class="modal-content-title">Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+    <form action="#" class="login-form" method="post">
+      <input type="text" class="icon-user" name="login" placeholder="Логин">
+      <input type="password" class="icon-password" name="password" placeholder="Пароль">
+      <label class="login-checkbox">
+        <input type="checkbox" name="remember">
+        <span class="checkbox-indicator"></span>
+        Запомните меня
+      </label>
+      <a href="#" class="restore">Я забыл пароль!</a>
+      <button class="btn" type="submit">Войти</button>
+    </form>
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+  </div>
+  <div class="modal-content-map">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.470092243831!2d30.32284721619983!3d59.940934768875344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e730f2af9%3A0x29f4ad94d9daf1e7!2sKonyushennaya+Ploshchad&#39;%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sua!4v1516024103227"
+      width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="modal-overlay"></div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

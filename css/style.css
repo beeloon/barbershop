@@ -1,0 +1,1066 @@
+body {
+  min-height: 960px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-family: 'PT Sans Narrow', "Arial", sans-serif;
+  color: #fff;
+  background: #000 url("../img/index/barbershop-index-layer.jpg") no-repeat center top;
+}
+
+.inner-page {
+  color: #000;
+  background: #f8f3f0 url("../img/pattern-white.png") repeat;
+}
+
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  /* 
+    нужно задавать наследование от родителя элементам типа: input,btn, a 
+    т.к. бывает что при задании общего значения, дочерние элементы все еще
+    используют свои стили по умолчанию
+  */
+  font: inherit; 
+  color: #fff;
+  text-transform: inherit;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 33px;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+  cursor: default;
+  opacity: .5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+  background-color: #000;
+}
+
+.main-header-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header {
+  margin-bottom: 60px;
+  color: #fff;
+  background-color: #000;
+}
+
+.inner-page .main-header {
+  margin-bottom: 55px;
+}
+
+.main-navigation {
+  width: 780px;
+  display: flex;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 25px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-navigation .logo-inner {
+  width: 111px;
+  height: 20px;
+  padding-top: 22px;
+}
+
+.main-navigation .logo-inner {
+  width: 111px;
+  height: 23px;
+}
+
+.main-navigation .logo-inner:hover {
+  background: none;
+}
+
+.main-navigation .active {
+  position: relative;
+  background-color: none;
+}
+
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;  
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.main-navigation .active a:hover {
+  background: none;
+}
+
+.user-block {
+  max-width: 140px;
+}
+
+.login {
+  position: relative;
+
+  padding: 25px 20px;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/sprite.png");
+  background-position: 170px -246px;
+  opacity: .3;
+}
+
+/* Подключить спрайт */
+.login:hover::before {
+  opacity: 1;
+} 
+
+.main-navigation a:hover,
+.login:hover {
+  background: #242424;
+}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 80px;
+} 
+
+.features-item {
+  width: 300px;
+  text-align: center;
+}
+
+.features-name {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features-name::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.features p {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.index-content {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 50px 80px;
+  margin-bottom: 35px;
+
+  color: #000;
+  background: url("../img/index/index-content-separator.png") no-repeat center, #faf7f4 url("../img/index/index-content-layer.png");
+}
+
+.index-content-left {
+  width: 380px;
+}
+
+.index-content-right {
+  width: 300px;
+}
+
+.index-content-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-content p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.news-preview {
+  margin: 0;
+  padding: 0;
+  padding-right: 35px;
+  list-style: none;
+}
+
+.news-preview li {
+  margin-bottom: 25px;
+}
+
+.news-preview p {
+  margin-bottom: 0;
+}
+
+.news-preview time {
+  text-transform: none;
+}
+
+.gallery {
+  position: relative;
+  height: 260px;
+}
+
+.gallery-content {
+  height: 164px;
+  margin: 0;
+  background-color: #ccc;
+  border: 7px solid #fff;
+}
+
+.gallery-content img {
+  width: 328px;
+  height: 164px;
+}
+
+.gallery .btn {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-prev {
+  left: 0;
+}
+
+.gallery-next {
+  right: 0;
+}
+
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.appointment-form input {
+  width: 106px;
+  padding: 7px 15px;
+  background-color: #f9f6f3;
+  border: 2px solid #000;
+  border: 2px solid #000;
+  font: inherit;
+  color: inherit;
+  text-transform: inherit;
+  margin-bottom: 20px;
+}
+
+.appointment-form input:focus {
+  border: 2px solid #663d15;
+}
+
+.appointment-form .btn {
+  margin-right: 0;
+  width: 100%;
+}
+
+/* Стили для внутренней страницы */
+
+.inner-page-title {
+  margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  display: inline;
+  padding-right: 40px;
+}
+
+.breadcrumbs li:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+  color: #000;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+  display: none;
+}
+
+/* Общие стили для контентных тегов */
+
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content h1 + h2 {
+  margin-top: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+  border: 2px solid #000;
+}
+
+.inner-content .big-heading-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 65px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.inner-content .big-heading-flex::after,
+.inner-content .big-heading-flex::before {
+  content: "";
+  flex-grow: 1;
+  width: 50px;
+  height: 2px;
+  background: #000;
+}
+
+.inner-content .big-heading-flex::before {
+  margin-right: 25px;
+}
+
+.inner-content .big-heading-flex::after {
+  margin-left: 25px;
+}
+
+.custom-list {
+  margin: 14px 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.custom-list li {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.prices-table {
+  width: 100%;
+}
+
+.prices-table td {
+  width: 50px;
+}
+
+.prices-table td:last-child {
+  text-align: center;
+}
+
+/* Колонки для контента */
+
+.inner-columns {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-columns-left,
+.inner-columns-right {
+  width: 460px;
+}
+
+.inner-columns-left *:first-child,
+.inner-columns-right *:first-child {
+  margin-top: 0;
+}
+
+.short-text {
+  padding-right: 80px;
+}
+
+/* Стили для страница магазина */
+
+.shop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-filter {
+  width: 170px;
+}
+
+.shop-filter .filter-form-title {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+
+.filter-form-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 60px;
+}
+
+.filter-form-list li {
+  line-height: 18px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.filter-form-list input[type="checkbox"],
+.filter-form-list input[type="radio"] {
+  display: none;
+}
+
+.filter-form-checkbox,
+.filter-form-radio {
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+  display: block;
+}
+
+.filter-form-checkbox:hover,
+.filter-form-radio:hover, {
+  color: #663d15;
+}
+
+.filter-form-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+}
+
+.filter-form-radio input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.filter-form-radio input[type="radio"]:checked + .radio-indicator::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.filter-form-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.filter-form-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+}
+
+.filter-form-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.filter-form-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);  
+}
+
+.shop-items {
+  width: 710px;
+}
+
+.shop-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  margin-right: 14px;
+  margin-bottom: 20px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+  -moz-box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.item-title {
+  padding-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.item-title a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.item-category {
+  display: block;
+  text-transform: none;
+}
+
+.item-name {
+  display: block;
+}
+
+.item-price {
+  padding-left: 15px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.item-price .item-price-text {
+  width: 108px;
+  background-color: #e5e5e5;
+  display: inline-block;
+  vertical-align: top;
+  height: 46px;
+  position: relative;
+}
+
+.item-price .item-price-text .text-center {
+  position: absolute;
+  line-height: 18px;
+  width: 100%; 
+  top: 14px; 
+  text-align: center;
+}
+
+.item-price .item-price-btn {
+  padding: 14px 18px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.shop-pagination {
+  margin-top: 45px;
+}
+
+.shop-pagination ul {
+  margin: 0;
+  padding: 0;
+}
+
+.shop-pagination li {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  margin-right: 6px;
+  line-height: 18px;
+}
+
+.shop-pagination .btn {
+  padding: 16px 18px;
+  margin-right: 0;
+}
+
+.shop-pagination .active a {
+  background-color: #fff;
+  color: #000;
+}
+
+.shop-pagination .active a:hover {
+  background: none;
+  cursor: default;
+}
+
+/* Стили для страницы продукта из магазина */
+.item-gallery {
+  width: 460px;
+}
+
+.item-gallery img {
+  -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+  -moz-box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.item-gallery .big-img {
+  width: 460px;
+  height: 498px;
+  margin-bottom: 20px;
+}
+
+.item-gallery .small-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-gallery .small-images img {
+  width: 140px;
+  height: 149px;
+}
+
+.item-desc {
+  padding-left: 75px;
+}
+
+.item-state,
+.item-vendor-code {
+  display: inline-block;  
+}
+
+.item-vendor-code {
+  float: right;
+  color: #aeaeae;
+}
+
+.item-state,
+.item-desc-text {
+  margin-bottom: 40px;
+}
+
+.item-desc-text {
+  margin-top: 0;
+}
+
+.item-desc .item-price {
+  padding-left: 0;
+  margin-bottom: 70px;
+}
+
+.item-contains h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+/* Стили для футера */
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  color: #fff;
+
+  background: #252525 url("../img/footer-background-layer.png");
+}
+
+.inner-page-footer {
+  box-shadow: inset 0px 30px 40px -15px #000;
+}
+
+.main-footer-layout {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin-right: 60px;
+}
+
+.footer-contacts a {
+  color: #fff;
+}
+
+.footer-contacts a:hover {
+  text-decoration: none;
+}
+
+.footer-socials {
+  width: 180px;
+}
+
+.footer-socials p {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.socials-btn-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-btn {
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  text-decoration: none;
+  background: #000 url("../img/sprite.png") no-repeat center;
+
+  transition: 
+    background-position .5s,
+    background-color .5s;
+}
+
+.social-btn:hover {
+  background-color: #fff;
+}
+
+.social-btn-vk {
+  background-position: -1px -333px;
+}
+
+.social-btn-fb {
+  background-position: 5px -32px;
+}
+
+.social-btn-inst {
+  background-position: 2px -116px;
+}
+
+.social-btn-vk:hover {
+  background-position: -1px -370px;
+}
+
+.social-btn-fb:hover {
+  background-position: 5px -74px;
+}
+
+.social-btn-inst:hover {
+  background-position: 2px -156px;
+}
+
+.footer-copyright {
+  max-width: 160px;
+  margin-left: auto;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-copyright .btn {
+  margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Всплывающая форма */
+
+.modal-content {
+  width: 300px;
+  padding: 50px 80px;
+  color: #000;
+  background: #f8f3f0 url("../img/pattern-white.png");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
+  position: fixed;
+  margin-left: -230px;
+  top: 120px;
+  left: 50%;
+  display: none;
+  z-index: 20;
+}
+
+.modal-content-map {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 600px;
+  z-index: 20;
+  margin-top: -280px;
+  margin-left: -390px;
+  background: #e9e5dc;
+  border: 7px solid #fff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5)
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: -34px; 
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.modal-content-close:after,
+.modal-content-close:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.modal-content-close:after {
+  transform: rotate(45deg);
+}
+
+.modal-content-close:before {
+  transform: rotate(-45deg);  
+}
+
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.modal-content .login-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 241px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'PT Sans Narrow', "Arial", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-form input.icon-user {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 102% -297px;
+}
+
+.login-form input.icon-password {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 102% -195px;
+}
+
+.login-form .restore {
+  float: right;
+  color: #000;
+}
+
+.login-form .btn {
+	width: 100%;
+	margin-top: 15px;
+}
+
+.login-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.login-checkbox:hover {
+  color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);  
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-2000px);}
+  70% { transform: translateY(30px);}
+  90% { transform: translateY(-10px);}
+  100% { transform: translateY(0);}
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
+  20%, 40%, 60%, 80% { transform: translateX(10px);}
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce .6s;
+}
+
+.modal-error {
+  animation: shake .6s;
+}
